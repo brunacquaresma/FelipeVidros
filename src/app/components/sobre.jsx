@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Loja from '/public/loja.png'
 
 function Sobre (props) {
     const emoji = String.fromCodePoint(0x1F91D)
@@ -8,9 +9,8 @@ function Sobre (props) {
         flex flex-col sm:flex-row justify-center py-2 pt-7 sm:pt-0 items-center h-full`}>
             <div className="flex justify-center py-0 sm:py-12">
                 <Image className='rounded'
-                src="/loja.png" alt="Nossa loja"
-                width={430}
-                height={430} 
+                src={Loja} alt="Nossa loja"
+                width={430} height={430}
                 />
             </div>
             <div className={`${props.darkTheme ? 'text-gray-50' : 'text-black'} 

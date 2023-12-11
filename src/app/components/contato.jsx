@@ -5,10 +5,10 @@ function Contato (props) {
             flex flex-col md:flex-row justify-evenly`}>
 
                 <div className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-100'}
-                h-full flex flex-col justify-center p-6 rounded mt-20 m-2  text-center md:text-left`}>
+                h-full flex flex-col justify-center p-6 rounded mt-20 m-2 text-center md:text-left`}>
 
                     <h3 className="text-3xl px-4 pb-8">Contato</h3>
-                    <div className="flex p-4 m-auto sm:m-0">
+                    <div className="flex p-4 m-auto sm:m-0 text-left">
                         <img className="h-8 w-8" src="/wpp.png" alt="Whatsapp" />
                         <p className="text-lg  px-1 pt-1">(53)99153-1637</p>
                     </div>
