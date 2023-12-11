@@ -22,7 +22,7 @@ export default function Page() {
     <>
       <main>
         <Header atualizarTema={atualizarTema} darkTheme={darkTheme} />
-        <button className='fixed bottom-12 right-7'>
+        <button className='fixed bottom-7 right-7'>
           <Link href="https://wa.me/5553991531637" target="_blank" rel="noopener noreferrer">
             <Image
               src='/wpp.png' alt='caminhoWhatspp'
