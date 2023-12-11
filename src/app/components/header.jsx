@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Header(props) {
+function Header(props) {
     return (
         <header id="header" className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-50'} p-4`}>
             <nav>
@@ -22,13 +23,16 @@ export default function Header(props) {
                         </Link>
                     </li>
                     <button onClick={props.atualizarTema} >
-                        <img src={props.darkTheme ? "/sun.png" : "/moon.png"} alt="Tema escuro/Tema claro"
-                        className={`${props.darkTheme ? 'border-gray-200' : 'border-gray-700'} 
-                        h-9 border-2 rounded-full p-1 `} />
+                    <Image className={`${props.darkTheme ? 'border-gray-200' : 'border-gray-700'} 
+                    h-9 border-2 rounded-full p-1`}
+                    src={props.darkTheme ? "/sun.png" : "/moon.png"} alt="Tema escuro/Tema claro"
+                    width={36} height={36}
+                    />
                     </button>
                 </ul>
             </nav>
-
         </header>
     )
 }
+
+export default Header;

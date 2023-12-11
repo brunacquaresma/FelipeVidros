@@ -1,4 +1,4 @@
-export default function Footer (props) {
+function Footer (props) {
     return (
         <footer className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-50'}
         text-center leading-loose py-3 border-t`}>
@@ -13,3 +13,5 @@ export default function Footer (props) {
         </footer>
     )
 }
+
+export default Footer;

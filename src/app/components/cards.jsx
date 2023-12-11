@@ -1,4 +1,4 @@
-export default function Card (props) {
+function Card (props) {
     return (
         <div>
             <div className={`${props.darkTheme ? 'text-gray-50' : 'text-black'} 
@@ -12,3 +12,5 @@ export default function Card (props) {
         </div>
     )
 }
+
+export default Card;

@@ -1,6 +1,6 @@
 import Card from './cards';
 
-export default function Servico (props) {
+function Servico (props) {
     return (
         <section id='servicos' className='bg-gray-100'>
             <div className='flex flex-col text-center justify-center py-8'>
@@ -27,3 +27,5 @@ export default function Servico (props) {
         </section>
     )
 }
+
+export default Servico;

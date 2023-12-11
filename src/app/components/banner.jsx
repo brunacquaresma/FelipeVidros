@@ -7,7 +7,13 @@ import'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function Banner (props) {
+import Image from 'next/image'
+import Portas from '/public/slides/portas.png';
+import Boxes from '/public/slides/boxes.png';
+import Sacadas from '/public/slides/sacadas.png';
+import Emuito from '/public/slides/emuito.png';
+
+function Banner (props) {
     return (
         <>
             <div className='hidden sm:block'>
@@ -25,25 +31,33 @@ export default function Banner (props) {
                 modules={[Navigation, Autoplay, Pagination]} >
                     <SwiperSlide>
                         <div className="w-6xl flex justify-around rounded">
-                        <img className="w-6xl" src="/slides/portas.png" alt="Slides" />
+                            <Image 
+                            src={Portas} alt="Slide de portas" 
+                            />  
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <div className="w-6xl flex justify-around rounded">
-                        <img className="w-6xl" src="/slides/sacadas.png" alt="Slides" />
+                            <Image 
+                            src={Sacadas} alt="Slide de sacadas" 
+                            />                        
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <div className="w-6xl flex justify-around rounded">
-                        <img className="w-6xl" src="/slides/boxes.png" alt="Slides" />
+                            <Image 
+                            src={Boxes} alt="Slide de box de banheiro" 
+                            />                            
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <div className="w-6xl flex justify-around">
-                        <img className="w-6xl" src="/slides/emuito.png" />
+                        <Image 
+                            src={Emuito} alt="Slide diversos" 
+                            />                           
                         </div>
                     </SwiperSlide>
                 </Swiper>
@@ -51,3 +65,5 @@ export default function Banner (props) {
         </>
     )
 }
+
+export default Banner;

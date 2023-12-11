@@ -1,10 +1,10 @@
-export default function (props) {
+function Contato (props) {
     return (
         <section id="contato" className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-50'} h-full`}>
             <div className={`${props.darkTheme ? 'text-gray-50' : 'text-black'} 
             flex flex-col md:flex-row justify-evenly`}>
 
-                <div className={`${props.darkTheme ? 'bg-red-900' : 'bg-gray-100'}
+                <div className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-100'}
                 h-full flex flex-col justify-center p-6 rounded mt-20 m-2  text-center md:text-left`}>
 
                     <h3 className="text-3xl px-4 pb-8">Contato</h3>
@@ -47,3 +47,5 @@ export default function (props) {
         </section>
     )
 }
+
+export default Contato;

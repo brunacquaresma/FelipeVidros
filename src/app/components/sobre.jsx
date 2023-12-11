@@ -1,13 +1,17 @@
-export default function Sobre (props) {
+import Image from 'next/image';
+
+function Sobre (props) {
     const emoji = String.fromCodePoint(0x1F91D)
 
     return (
         <section id="sobre" className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-50'} 
         flex flex-col sm:flex-row justify-center py-2 pt-7 sm:pt-0 items-center h-full`}>
             <div className="flex justify-center py-0 sm:py-12">
-                <img className="rounded" src="/loja.png" alt="Nossa loja"
+                <Image className='rounded'
+                src="/loja.png" alt="Nossa loja"
                 width={430}
-                height={430} />
+                height={430} 
+                />
             </div>
             <div className={`${props.darkTheme ? 'text-gray-50' : 'text-black'} 
             px-10 pb-9 w-screen sm:w-1/2 text-center sm:text-start`}>
@@ -17,3 +21,5 @@ export default function Sobre (props) {
         </section>
     )
 }
+
+export default Sobre;

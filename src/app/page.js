@@ -7,10 +7,11 @@ import Servico from './components/servicos'
 import Contato from './components/contato'
 import Footer from './components/footer';
 
+import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-export default function Home() {
+export default function Page() {
 
   const [darkTheme, setDarkTheme] = useState(false);
 
@@ -21,9 +22,12 @@ export default function Home() {
     <>
       <main>
         <Header atualizarTema={atualizarTema} darkTheme={darkTheme} />
-        <button className='fixed bottom-7 right-10 h-24 w-14 sm:h-32 sm:w-20'>
+        <button className='fixed bottom-12 right-7'>
           <Link href="https://wa.me/5553991531637" target="_blank" rel="noopener noreferrer">
-            <img src='/wpp.png' />
+            <Image
+              src='/wpp.png' alt='caminhoWhatspp'
+              width={56} height={96}
+            />
           </Link>
         </button>
         <Banner atualizarTema={atualizarTema} darkTheme={darkTheme} />
