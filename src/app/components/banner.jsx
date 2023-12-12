@@ -16,7 +16,7 @@ import Emuito from '/public/slides/emuito.png';
 function Banner (props) {
     return (
         <>
-            <div className='hidden sm:block'>
+            <div className='hidden sm:block border-t'>
                 <Swiper
                 autoplay={{
                     delay: 3000

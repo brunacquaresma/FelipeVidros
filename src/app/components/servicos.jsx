@@ -2,7 +2,7 @@ import Card from './cards';
 
 function Servico (props) {
     return (
-        <section id='servicos' className='bg-gray-100'>
+        <section id='servicos' className='bg-gray-100 border-y'>
             <div className='flex flex-col text-center justify-center py-8'>
                 <h2 className='text-4xl'>Nossos serviços</h2>
                 <p className='pt-7 text-lg'>Orçamento gratuito</p>
