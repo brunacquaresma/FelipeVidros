@@ -6,10 +6,14 @@ import Banner from './components/banner';
 import Servico from './components/servicos'
 import Contato from './components/contato'
 import Footer from './components/footer';
+import Wpp from '/public/wpp.png';
 
 import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react';
+
+import { register } from 'swiper/element/bundle';
+register();
 
 export default function Page() {
 
@@ -25,8 +29,8 @@ export default function Page() {
         <button className='fixed bottom-7 right-7'>
           <Link href="https://wa.me/5553991531637" target="_blank" rel="noopener noreferrer">
             <Image
-              src='/wpp.png' alt='caminhoWhatspp'
-              width={56} height={96}
+              src={Wpp} alt='caminhoWhatspp'
+              width={56} height={76}
             />
           </Link>
         </button>

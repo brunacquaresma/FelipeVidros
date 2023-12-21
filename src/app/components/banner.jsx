@@ -18,15 +18,12 @@ function Banner (props) {
         <>
             <div className='hidden sm:block border-t'>
                 <Swiper
+                slidesPerView={1}
+                loop={true}
+                pagination={{ clickable: true }}
+                navigation
                 autoplay={{
                     delay: 3000
-                }}
-                navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                }}
-                pagination={{
-                    type: 'bullets'
                 }}
                 modules={[Navigation, Autoplay, Pagination]} >
                     <SwiperSlide>
