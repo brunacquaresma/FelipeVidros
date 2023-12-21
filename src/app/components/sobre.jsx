@@ -11,6 +11,7 @@ function Sobre (props) {
                 <Image className='rounded'
                 src={Loja} alt="Nossa loja"
                 width={430} height={430}
+                priority
                 />
             </div>
             <div className={`${props.darkTheme ? 'text-gray-50' : 'text-black'} 
