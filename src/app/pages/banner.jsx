@@ -13,7 +13,7 @@ import Boxes from '/public/slides/boxes.webp';
 import Sacadas from '/public/slides/sacadas.webp';
 import Emuito from '/public/slides/emuito.webp';
 
-function Banner (props) {
+function Banner () {
     return (
         <>
             <div className='hidden sm:block border-t'>
