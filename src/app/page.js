@@ -1,11 +1,11 @@
 "use client"
 
-import Header from './components/header';
-import Sobre from './components/sobre';
-import Banner from './components/banner';
-import Servico from './components/servicos'
-import Contato from './components/contato'
-import Footer from './components/footer';
+import Header from './pages/header';
+import Sobre from './pages/sobre';
+import Banner from './pages/banner';
+import Servico from './pages/servicos'
+import Contato from './pages/contato'
+import Footer from './pages/footer';
 import Wpp from '/public/wpp.png';
 
 import Image from 'next/image'
