@@ -8,10 +8,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import Image from 'next/image'
-import Portas from '/public/slides/portas.png';
-import Boxes from '/public/slides/boxes.png';
-import Sacadas from '/public/slides/sacadas.png';
-import Emuito from '/public/slides/emuito.png';
+import Portas from '/public/slides/portas.webp';
+import Boxes from '/public/slides/boxes.webp';
+import Sacadas from '/public/slides/sacadas.webp';
+import Emuito from '/public/slides/emuito.webp';
 
 function Banner (props) {
     return (
