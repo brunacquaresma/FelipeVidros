@@ -13,4 +13,4 @@ function Map () {
     )
 }
 
-export default memo(Map);
+export default Map;
