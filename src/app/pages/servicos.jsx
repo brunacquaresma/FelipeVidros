@@ -27,7 +27,7 @@ function Servico (props) {
                 titulo="Esquadrias de alumínio"
                 paragrafo="Temos as melhores opções em esquadrias de alumínio para que seu projeto tenha um acabamento perfeito." />
             </div>
-            <div className='h-12 w-full bg-cover bg-center relative'
+            <div className='h-12 w-full bg-cover bg-center relative filter grayscale blur-md contrast-200'
                 style={{ 
                 backgroundImage: `url('/bg-service.jpg')`,
                 backgroundAttachment: "fixed",

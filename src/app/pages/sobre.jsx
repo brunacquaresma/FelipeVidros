@@ -6,7 +6,7 @@ function Sobre (props) {
 
     return (
         <section id="sobre" className={`${props.darkTheme ? 'bg-custom-bg-color' : 'bg-gray-50'} 
-        flex flex-col sm:flex-row justify-center py-2 pt-7 sm:pt-0 items-center h-full border-t`}>
+        flex flex-col sm:flex-row justify-center  pt-7 sm:pt-0 items-center h-full border-t`}>
             <div className="flex justify-center py-0 sm:py-12">
                 <Image className='rounded'
                 src={Loja} alt="Nossa loja"
