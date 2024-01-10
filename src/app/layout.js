@@ -8,8 +8,9 @@ export const metadata = {
   "A vidraçaria FELIPE VIDROS E ESQUADRIAS é uma empresa especializada em instalação de vidros comuns, vidros temperados e esquadrias na cidade de Rio Grande, RS.",
   keywords: 'vidros, esquadrias, janelas, portas de vidro, teto de vidro, muro de vidro',
   icons:{
-    icon:['/favicon.ico?v=4']
-  }
+    icon:['/favicon.ico?v=4'],
+  },
+  ogImage: '/loja.webp'
 }
 
 const mainFontFamily = Kanit({
